@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-EXPECT="HELLO WORLD2" ;
+EXPECT="HELLO WORLD" ;
 OUTPUT="$(bash hello-world.sh)" ;
 
 MSG_GOOD="GREAT output as expected:\n${OUTPUT}\n\nPASSED\n"
