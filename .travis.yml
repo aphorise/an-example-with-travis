@@ -1,3 +1,11 @@
 language: minimal
 script:
  - bash test_hello-world.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: 3hI557D-IEl921Mes_kTQw
+  file: "hello-world.sh"
+  skip_cleanup: true
+  on:
+    tags: true
