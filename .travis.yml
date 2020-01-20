@@ -1,3 +1,12 @@
 language: minimal
 script:
- - bash test_hello-world.sh
+- bash test_hello-world.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: WXe00Pa6xFiui8bJW/2I5yf+J5U55DoI4/tXnbpE44ntYAL112qCZiLvIahRk2btF0XOEB+f8K6WqEUYt2J1wJTyWSMn1oQn2gFp/S0bWC7C9r6omjRLyKnS0ZtXjDPdUkGUKkjfr5f0wUD3WIMBzpInZyILxJoaGuhr78MjhLz35sjnqMMqiHYfHiiuDZl72bhERCdKIeqGnaeWjVMR2HJcaWWRFOmI0hlQERQ1mER1vfxtV/D4ly8AYItFS//+KiHLwzE+DQwQ0rAaIWvwDUV+r4XCsGW6vB2DpW999Xihmt6PQc5uISyqjTR3Xt3r1ULlGx7h82RGe4j21bKDCVC8B662tzKfn+PuNd9UQX+oG0Ndz4cElZ7Twt2A0fjvU9HT+U4j4VEav/q5BikEyF0LcBz7od2tIKSpkFMtD124yIL0Q3eJWrYAxQT8PVR1CWz++iDsKjimWUjICtexbUGlBXkuAF/VgRUQF0TYKA6fS8uDPW0nsAgAqTKHhuvFrNdVbDZDxw9pmUHiv8T3tkI9aosu+9aa1Yj8tQWyaYdcRR7ZviKoOThGvBBfTbs+YYst04g0Yr0y49BOuX05ra6h9xTQ4DJToeeLlvthS/e40iTV/N/+rVvdxY17be6uI48yefYCUGgGqFfE2pUIbe6NJztAnppAfq4dqpiculs=
+  file: hello-world.sh
+  skip_cleanup: true
+  on:
+    repo: aphorise/an-example-with-travis
+    tags: true

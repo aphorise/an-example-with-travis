@@ -4,7 +4,7 @@ EXPECT="HELLO WORLD" ;
 OUTPUT="$(bash hello-world.sh)" ;
 
 MSG_GOOD="GREAT output as expected:\n${OUTPUT}\n\nPASSED\n"
-MSG_BAD="ERROR unexpected output:\n${OUTPUT}\nWas expecting: ${EXPECTING}\n\nFAILED!\n"
+MSG_BAD="ERROR unexpected output:\n${OUTPUT}\nWas expecting: ${EXPECT}\n\nFAILED!\n"
 
 if [[ ${OUTPUT} == ${EXPECT} ]] ; then
 	printf "${MSG_GOOD}" ;
