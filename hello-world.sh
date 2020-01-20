@@ -2,4 +2,4 @@
 
 # A simple "hello world"
 
-printf "HELLO THERE WORLD\n" ;
+printf "HELLO WORLD\n" ;
